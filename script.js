@@ -11,6 +11,7 @@ const closeImg = "/img/close.png";
 const openSound = new Audio("/audio/soundOpen.mp3");
 const closeSound = new Audio("/audio/soundClose.mp3");
 const sakanigadik = new Audio("/audio/sakanigadik.mp3");
+const bakso = new Audio("/audio/bakso.mp3");
 //sakanigadik.play();
 //
 
@@ -31,23 +32,33 @@ btn.addEventListener("touchend", function (e) {
 
 // The functions which will perform the cool stuff
 let score = 0;
-let nilai = 0;
+let nilais = 0;
+let nilaib = 0;
 function openMouth() {
   popcat.src = openImg;
   openSound.play();
   score++;
   point.innerHTML = score;
+
+  //shake animation
+  point.classList.toggle("move");
+
   //sakanigedik play jika score berkelipatan 100
 
-  nilai++;
-  if (nilai == 1000) {
+  nilais++;
+  nilaib++;
+  if (nilais == 1000) {
     sakanigadik.play();
-    nilai -= 1000;
+    nilais -= 1000;
     saka.innerHTML = "anda sangat gabut sakanigadiiiikkkk!!!!!!!!!!!";
+  } else if (nilaib == 100) {
+    bakso.play();
+    nilaib -= 100;
   }
 }
 
 function closeMouth() {
   popcat.src = closeImg;
   closeSound.play();
+  point.classList.toggle("move");
 }
