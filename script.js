@@ -1,6 +1,6 @@
 //element
 const popcat = document.querySelector(".popcat");
-const btn = document.querySelector(".btn");
+const btn = document.querySelector("body");
 const point = document.getElementById("point");
 const text = document.getElementById("saka");
 
@@ -51,7 +51,8 @@ function openMouth() {
     sakanigadik.play();
     nilais -= 1000;
     saka.innerHTML = "anda sangat gabut sakanigadiiiikkkk!!!!!!!!!!!";
-  } else if (nilaib == 100) {
+  } 
+  if (nilaib == 100) {
     bakso.play();
     nilaib -= 100;
   }
