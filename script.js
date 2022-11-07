@@ -1,6 +1,6 @@
 //element
 const popcat = document.querySelector(".popcat");
-const btn = document.querySelector("body");
+const btn = document.querySelector(".btn");
 const point = document.getElementById("point");
 const text = document.getElementById("saka");
 
