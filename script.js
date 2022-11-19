@@ -12,7 +12,7 @@ const openSound = new Audio("/audio/soundOpen.mp3");
 const closeSound = new Audio("/audio/soundClose.mp3");
 const sakanigadik = new Audio("/audio/sakanigadik.mp3");
 const bakso = new Audio("/audio/bakso.mp3");
-sakanigadik.play();
+//sakanigadik.play();
 //
 
 // Event Handlers (Desktops)
