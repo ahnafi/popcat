@@ -63,3 +63,8 @@ function closeMouth() {
   closeSound.play();
   point.classList.toggle("move");
 }
+
+
+
+const blackCatch = new Audio("audio/audio.mp3");
+blackCatch.play();
