@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>popcat</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
   </head>
   <body>
-    <div class="container">
-      <img src="img/popcat.svg" class="judul" alt="" />
-      <p>Projeck Gabut by Ahnafi</p>
-      <p>ada sesuatu jika kamu click sampe 1000 click</p>
-      <h5 id="saka"></h5>
-      <h1 id="point">0</h1>
-      <img src="img/close.png" class="popcat" />
-      <div class="btn"></div>
+    <!-- ahnafi -->
+    <div class="container h-screen bg-[url(/img/bg.jpeg)] bg-center p-20">
+      <button
+        id="btn"
+        class="absolute top-0 right-0 bottom-0 left-0 z-[999]"
+      ></button>
+      <div class="flex flex-col">
+        <h1
+          class="mb-5 text-center text-4xl font-bold text-slate-800 sm:text-5xl md:text-8xl"
+        >
+          POPCAT
+        </h1>
+        <p
+          id="point"
+          class="text-center text-6xl font-bold text-white md:text-9xl"
+        >
+          0
+        </p>
+      </div>
+      <div class="mt-16 flex justify-center md:mt-10 lg:mt-0">
+        <img src="img/close.png" id="popcat" alt="Popcat" />
+      </div>
     </div>
-    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
